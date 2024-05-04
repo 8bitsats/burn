@@ -11,7 +11,12 @@
     <h1>Burn SPL Token</h1>
     <button id="connect-wallet">Connect Wallet</button>
     <div id="wallet-info"></div>
-    <input type="number" id="burn-amount" placeholder="Amount to Burn">
+    <input type="number" id="burn-amount" placeholder="Amount to Burn" min="0">
     <button id="burn-token" disabled>Burn Token</button>
+    <div id="transaction-history">
+        <h2>Transaction History</h2>
+        <ul id="history-list"></ul>
+    </div>
+    <div id="error-message"></div>
 </body>
 </html>
